@@ -85,11 +85,11 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            href="/features"
+            href="/services"
             onClick={closeMenu}
             className="px-6 py-4 text-white hover:bg-accent/20 hover:text-accent transition-all duration-200 border-l-4 border-transparent hover:border-accent font-medium"
           >
-            Features
+            Services
           </Link>
           <Link
             href="/about"
