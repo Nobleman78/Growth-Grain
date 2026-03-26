@@ -5,12 +5,11 @@ import { MdSend } from 'react-icons/md';
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" id='contact'>
       {/* Navigation Spacer */}
       <div className="h-24 bg-white" />
 
       <main>
-    
         {/* Contact Info & Form Grid */}
         <section className="py-24">
           <Container>

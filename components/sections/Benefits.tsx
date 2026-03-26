@@ -1,14 +1,14 @@
 import Container from '../ui/Container';
 import SectionHeading from '../ui/SectionHeading';
-import { Sprout, Activity, ShieldCheck, DollarSign, Settings, TrendingUp } from 'lucide-react';
+import { Sprout, Activity, ShieldCheck, DollarSign, HandFist } from 'lucide-react';
 
 const benefits = [
-  { icon: Sprout, title: "Sustainability", desc: "Eco-friendly practices that protect our soil and our water quality for future foods." },
-  { icon: Activity, title: "Real-time Monitoring", desc: "Detailed insights tracking the growth variables for any issues early on before they escalate." },
-  { icon: ShieldCheck, title: "Improved Food Security", desc: "Reliable yields and tracking models ensure robust resources for global populations." },
-  { icon: DollarSign, title: "Cost Optimization", desc: "Streamline operations with smart saving technologies eliminating unnecessary waste." },
-  { icon: Settings, title: "Smart Farming", desc: "Powerful analytics platforms and automated routines to optimize farm management." },
-  { icon: TrendingUp, title: "Yield Optimization", desc: "Aggrotech enhances volume with scientific models to maximize crop outputs securely." }
+  { icon: Sprout, title: "Maximized grain prices", desc: "Access premium markets and best available bids to get higher returns on your grain." },
+  { icon: Activity, title: "Flexible selling options", desc: "Sell grain whether it’s stored on-farm or within major systems like Viterra or ports." },
+  { icon: ShieldCheck, title: "Expert market insights", desc: "Receive reliable data, daily bid information, and detailed reports to support better decisions." },
+  { icon: HandFist, title: "Tailored advisory support", desc: "Get customized strategies and consultation based on your specific farming and marketing needs." },
+  { icon: DollarSign, title: "Cost efficiency", desc: "Benefit from fee-based services and even free brokerage options under certain packages." },
+  { icon: HandFist, title: "End-to-end support", desc: "Guidance on storage systems, logistics, and shipping analysis to optimize overall grain management." }
 ];
 
 export default function Benefits() {

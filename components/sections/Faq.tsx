@@ -2,10 +2,9 @@ import Container from '../ui/Container';
 import { ChevronDown } from 'lucide-react';
 
 const faqs = [
-  { question: "How do I buy from a country from the UK?", answer: "We offer international shipping and support purchasing directly through our global platform. Contact our sales team for country-specific compliance and shipping details." },
-  { question: "Do you have the Head Office and showrooms?", answer: "Yes, our head office is located in London, and we have several showrooms globally. You can find the nearest showroom on our contact page." },
-  { question: "Do you have any guarantee?", answer: "We provide a comprehensive 5-year guarantee on all our agricultural machinery and drones, covering parts and labor." },
-  { question: "How do I know which machine is right for my business?", answer: "Our expert consultants are available 24/7 to analyze your farm's data and requirements to recommend the most optimal solutions." }
+  { question: "What kind of services do you offer?", answer: "We offer a wide range of agricultural services, including crop management, data service, marketing." },
+  { question: "Which area you provide services in?", answer: "We work with most major grain buyers across South Australia, including depot buyers and end-user mills in key locations such as Wasleys, Murray Bridge, and Mile End." },
+  { question: "Does the professional provide the services?", answer: "Yes, our team of professional agronomists and consultants provide hands-on support and guidance for all our services. We have more than 19+ years of experience in the industry." },
 ];
 
 export default function Faq() {

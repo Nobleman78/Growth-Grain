@@ -1,28 +1,28 @@
+"use client"
 import Container from '../../components/ui/Container';
 import Button from '../../components/ui/Button';
-import { MdGavel, MdDataUsage, MdTrendingUp } from 'react-icons/md';
-
+import packageImage from '../../public/images/package.avif';
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 export default function ServicesPage() {
+    const router = useRouter()
     const services = [
         {
             title: 'Cash Brokerage',
             subtitle: 'Growers',
-            icon: MdGavel,
             description: 'Sell grain to buyers on your behalf, whether your grain is in the system (Viterra/AWB/Tports etc) or you are holding grain on farm. Realize the premium being paid into end user markets or Port after harvest delivery.',
             color: 'from-blue-50',
         },
         {
             title: 'Data Service',
             subtitle: 'Market Intelligence',
-            icon: MdDataUsage,
             description: 'More aimed at end user buyers or marketers. We offer data whether that is best bids on a given day in a raw data format or comprehensive reports. Contact for more detailed information.',
             color: 'from-purple-50',
         },
         {
             title: 'Grower Advisory',
             subtitle: 'Tailored Solutions',
-            icon: MdTrendingUp,
             description: 'Various advisory packages tailored to suit individual grower needs. Includes free brokerage, weekly grain reports, marketing plan development, and on-farm storage optimization.',
             color: 'from-green-50',
         },
@@ -44,12 +44,11 @@ export default function ServicesPage() {
 
             <main>
 
-
                 {/* What We Offer Section */}
                 <section className="py-20">
                     <Container>
                         <div className="">
-                            <h2 className="text-5xl font-bold text-[#123524] mb-8">What We Offer</h2>
+                            <h2 className="text-4xl md:text-5xl font-bold text-[#123524] mb-8">What We Offer</h2>
                             <div className="space-y-6 text-lg text-[#123524] leading-relaxed">
                                 <p>
                                     At this stage, Growth Grain Services offers cash brokerage services for SA growers (or grain moving into South Australia) on a fee for service basis.
@@ -68,13 +67,12 @@ export default function ServicesPage() {
                     <Container>
                         <div className="max-w-6xl mx-auto">
                             <div className="text-center mb-20">
-                                <h2 className="text-5xl font-bold text-[#0d2a1b] mb-4">Our Core Services</h2>
+                                <h2 className="text-4xl md:text-5xl font-bold text-[#0d2a1b] mb-4">Our Core Services</h2>
                                 <p className="text-xl text-gray-600 max-w-2xl mx-auto">Professional solutions designed to meet the diverse needs of grain market participants</p>
                             </div>
 
                             <div className="grid lg:grid-cols-3 gap-8">
                                 {services.map((service, idx) => {
-                                    const Icon = service.icon;
                                     return (
                                         <div
                                             key={idx}
@@ -83,9 +81,9 @@ export default function ServicesPage() {
                                             <div className="flex items-start justify-between mb-6">
                                                 <div>
                                                     {/* <p className="text-accent font-bold uppercase tracking-widest text-xs mb-2">{service.subtitle}</p> */}
-                                                    <h3 className="text-3xl font-bold text-[#0d2a1b]">{service.title}</h3>
+                                                    <h3 className="text-2xl md:text-3xl font-bold text-[#0d2a1b]">{service.title}</h3>
                                                 </div>
-                                                <Icon className="text-5xl text-accent/40 group-hover:text-accent transition-colors duration-300" />
+                                                {/* <Icon className="text-5xl text-accent/40 group-hover:text-accent transition-colors duration-300" /> */}
                                             </div>
                                             <p className="text-gray-700 leading-relaxed mb-6">
                                                 {service.description}
@@ -131,11 +129,8 @@ export default function ServicesPage() {
 
                                 {/* Right - Visual */}
                                 <div className="relative">
-                                    <div className="bg-linear-to-br from-accent/20 to-accent/5 rounded-3xl p-12 border border-accent/30 flex items-center justify-center h-96">
-                                        <div className="text-center">
-                                            <MdTrendingUp className="text-8xl text-accent/30 mx-auto mb-4" />
-                                            <p className="text-gray-500 text-lg font-medium">Customized Advisory</p>
-                                        </div>
+                                    <div className="">
+                                        <Image src={packageImage} alt="Advisory Package" height={1000} width={1000} className="w-full h-full object-cover rounded-xl" />
                                     </div>
                                     <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-accent/10 rounded-full blur-3xl" />
                                 </div>
@@ -143,9 +138,6 @@ export default function ServicesPage() {
                         </div>
                     </Container>
                 </section>
-
-
-
 
                 {/* CTA Section */}
                 <section className="py-20 bg-accent">
@@ -155,7 +147,7 @@ export default function ServicesPage() {
                             <p className="text-xl text-accent-light mb-10 max-w-2xl mx-auto">
                                 Contact Growth Grain Services today to learn more about how we can help optimize your grain marketing strategy.
                             </p>
-                            <Button className="bg-white text-accent hover:bg-gray-100 px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300">
+                            <Button onClick={() => router.push('/contact')} className="bg-white text-accent hover:bg-gray-100 px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300">
                                 Contact Us Now
                             </Button>
                         </div>

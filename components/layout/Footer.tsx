@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Container from '../ui/Container';
-import Button from '../ui/Button';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
@@ -19,11 +18,11 @@ export default function Footer() {
           {/* Left Section */}
           <div className="sm:col-span-2 md:col-span-1 lg:col-span-6">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 sm:mb-8 max-w-lg leading-tight">
-              Isn&apos;t It Time To Embrace Agricultural Technology For A Sustainable Future?
+              Isn&apos;t It Time To Embrace Agricultural Methods For A Better Result?
             </h2>
-            <Button variant="primary" className="rounded-lg w-full sm:w-auto">
+            <Link href="/contact" className="rounded text-black py-3 px-5 bg-accent w-full sm:w-auto">
               Contact Us
-            </Button>
+            </Link>
           </div>
 
           {/* Company Links */}
@@ -72,7 +71,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-white/10 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6">
+        <div className=" pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6">
           <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left order-3 sm:order-1 w-full sm:w-auto">
             © Copyright 2023 | Aggrotech All right reserved.
           </p>

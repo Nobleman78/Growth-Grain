@@ -30,7 +30,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <Button className="bg-linear-to-r from-accent to-accent/80 text-white font-bold px-8 py-3 rounded-full shadow-lg shadow-accent/50 hover:shadow-accent/80 hover:scale-105 transition-all duration-300 border border-accent/50 hover:border-accent uppercase tracking-widest text-sm">Contact Us</Button>
+          <Link href='/contact'  className="bg-linear-to-r from-accent to-accent/80 text-white font-bold px-8 py-3 rounded-lg shadow-lg shadow-accent/50 hover:shadow-accent/80 hover:scale-105 transition-all duration-300 border border-accent/50 hover:border-accent uppercase tracking-widest text-sm">Contact Us</Link>
         </div>
 
         {/* Mobile Menu Button */}

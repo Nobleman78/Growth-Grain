@@ -19,7 +19,7 @@ export default function AboutPage() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               {/* Left Content */}
               <div>
-                <h1 className="text-[52px] font-bold text-[#123524] mb-8 leading-tight">
+                <h1 className="text-4xl md:text-[52px] font-bold text-[#123524] mb-8 leading-tight">
                   Keeping Growers Informed
                 </h1>
                 <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -53,7 +53,7 @@ export default function AboutPage() {
                 <div className="mb-8">
                   <span className="text-accent font-bold uppercase tracking-widest text-sm">Founder Story</span>
                 </div>
-                <h2 className="text-5xl font-bold text-[#123524] mb-8 leading-tight">
+                <h2 className="text-4xl md:text-5xl font-bold text-[#123524] mb-8 leading-tight">
                   Jack Zacker&apos;s Journey
                 </h2>
 
@@ -108,7 +108,7 @@ export default function AboutPage() {
                 <div className="inline-block mb-6">
                   <span className="text-accent font-bold uppercase tracking-widest text-sm">Our Network</span>
                 </div>
-                <h2 className="text-5xl font-bold text-[#123524] mb-6 leading-tight">
+                <h2 className="text-4xl md:text-5xl font-bold text-[#123524] mb-6 leading-tight">
                   Grain Buyers We Work With
                 </h2>
                 <p className="text-2xl text-gray-600  font-light leading-relaxed">

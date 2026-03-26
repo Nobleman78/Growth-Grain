@@ -1,3 +1,4 @@
+"use client"
 import Container from '../ui/Container';
 import SectionHeading from '../ui/SectionHeading';
 import { ArrowUpRight } from 'lucide-react';
@@ -5,6 +6,7 @@ import grain from '../../public/images/grain.jpg';
 import grower from '../../public/images/grower.avif';
 import weater from '../../public/images/weather.avif';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const solutions = [
   { title: "Sell grain to buyers", bgClass: "bg-blue-100",img:grain },
@@ -13,6 +15,7 @@ const solutions = [
 ];
 
 export default function Solutions() {
+  const router = useRouter();
   return (
     <section className="py-24 bg-background">
       <Container>
@@ -28,8 +31,8 @@ export default function Solutions() {
             <div key={idx} className={`rounded-3xl p-8 flex flex-col h-100 overflow-hidden group hover:-translate-y-2 transition-transform duration-300 relative ${idx === 1 ? 'bg-primary text-white' : 'bg-muted text-foreground'}`}>
               <div className="flex justify-between items-start mb-6 z-10 w-full relative">
                 <h3 className="text-2xl font-bold max-w-37.5 leading-snug">{item.title}</h3>
-                <div className={`w-12 h-12 rounded-full flex items-center justify-center border-2 shrink-0 ${idx === 1 ? 'bg-accent border-accent text-primary' : 'border-gray-300 text-foreground group-hover:bg-accent group-hover:border-accent group-hover:text-primary'} transition-colors`}>
-                  <ArrowUpRight className="w-6 h-6" />
+                <div className={`w-12 h-12 rounded-full flex items-center justify-center border-2 cursor-pointer shrink-0 ${idx === 1 ? 'bg-accent border-accent text-primary' : 'border-gray-300 text-foreground group-hover:bg-accent group-hover:border-accent group-hover:text-primary'} transition-colors`}>
+                  <ArrowUpRight onClick={()=>router.push('/services')} className="w-6 h-6" />
                 </div>
               </div>
               
