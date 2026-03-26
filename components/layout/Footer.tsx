@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className=" pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6">
           <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left order-3 sm:order-1 w-full sm:w-auto">
-            © Copyright 2023 | Aggrotech All right reserved.
+            © Copyright 2026 | Growth Grain Services All right reserved.
           </p>
 
           {/* Social Icons */}
