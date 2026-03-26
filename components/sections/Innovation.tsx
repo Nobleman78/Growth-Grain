@@ -24,7 +24,7 @@ export default function Innovation() {
             <div className="absolute bottom-8 left-8 right-8 md:bottom-12 md:left-12 lg:right-auto lg:w-[85%] bg-white/95 backdrop-blur-md p-8 rounded-3xl shadow-xl">
               <span className="bg-[#f0f8ce] text-[#5c7a1c] text-xs font-bold px-3 py-1.5 rounded-full inline-block mb-4 uppercase tracking-wider">Our Promise</span>
               <p className="text-gray-800 font-medium text-sm md:text-lg leading-relaxed mb-6">Providing marketing, stem analysis, weekly grain reports for better decision-making. We also offering cash brokerage services.</p>
-              <a href="tel:+0407 469 730" className="w-full bg-accent text-primary font-bold py-4 rounded-xl px-5 hover:bg-[#b5d520] transition-colors text-lg">Contact for More Details</a>
+              <a href="tel:+0407 469 730" className="w-full bg-accent text-primary font-bold py-4 rounded-xl px-5 hover:bg-[#b5d520] transition-colors text-sm md:text-lg">Contact for More Details</a>
             </div>
           </div>
 
