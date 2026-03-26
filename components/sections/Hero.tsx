@@ -33,10 +33,10 @@ export default function Hero() {
           <h1 className="text-4xl md:text-6xl lg:text-[80px] font-bold text-white mb-6 tracking-tight drop-shadow-2xl" style={{ lineHeight: 1.1, textShadow: '0 4px 20px rgba(0,0,0,0.8)' }}>
             Revolutionizing <br />
             Agriculture with <br />
-            <span className="text-accent drop-shadow-2xl">New Technology</span>
+            <span className="text-accent drop-shadow-2xl">New Methods</span>
           </h1>
           <p className="text-gray-100 text-lg md:text-xl mb-12 leading-relaxed font-medium drop-shadow-lg" style={{ textShadow: '0 2px 10px rgba(0,0,0,0.7)' }}>
-            Visionary and innovative platforms continuously introduce new models tailored specifically for modern farming, enhancing both yield and ecosystem life.
+            Visionary and innovative platforms continuously introduce new methods tailored specifically for modern farming, enhancing both yield and ecosystem life.
           </p>
           <Button onClick={handleGoToContact} variant="primary" className="text-lg px-10 py-4 font-bold shadow-2xl shadow-accent/40 hover:scale-110 hover:shadow-accent/60 transition-all duration-300 border-2 border-accent/30">
             Get Started
