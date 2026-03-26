@@ -107,7 +107,7 @@ export default function ServicesPage() {
                                     <div className="inline-block mb-6">
                                         <span className="text-accent font-bold uppercase tracking-widest text-sm">Advisory Services</span>
                                     </div>
-                                    <h2 className="text-5xl font-bold text-[#0d2a1b] mb-8 leading-tight">
+                                    <h2 className="text-4xl md:text-5xl font-bold text-[#0d2a1b] mb-8 leading-tight">
                                         Grower Advisory Packages
                                     </h2>
                                     <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -143,11 +143,11 @@ export default function ServicesPage() {
                 <section className="py-20 bg-accent">
                     <Container>
                         <div className="max-w-4xl mx-auto text-center text-white">
-                            <h2 className="text-5xl font-bold mb-6">Ready to Get Started?</h2>
-                            <p className="text-xl text-accent-light mb-10 max-w-2xl mx-auto">
+                            <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Get Started?</h2>
+                            <p className="text-lg md:text-xl text-accent-light mb-10 max-w-2xl mx-auto">
                                 Contact Growth Grain Services today to learn more about how we can help optimize your grain marketing strategy.
                             </p>
-                            <Button onClick={() => router.push('/contact')} className="bg-white text-accent hover:bg-gray-100 px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300">
+                            <Button onClick={() => router.push('/contact')} className="bg-white text-accent hover:bg-gray-100 px-10 py-4 rounded-lg font-bold text-md md:text-lg transition-all duration-300">
                                 Contact Us Now
                             </Button>
                         </div>
