@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import Container from '../ui/Container';
-import Button from '../ui/Button';
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,7 +30,7 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:block">
-          <Link href='/contact'  className="bg-linear-to-r from-accent to-accent/80 text-white font-bold px-8 py-3 rounded-lg shadow-lg shadow-accent/50 hover:shadow-accent/80 hover:scale-105 transition-all duration-300 border border-accent/50 hover:border-accent uppercase tracking-widest text-sm">Contact Us</Link>
+          <Link href='/contact' className="bg-linear-to-r from-accent to-accent/80 text-white font-bold px-8 py-3 rounded-lg shadow-lg shadow-accent/50 hover:shadow-accent/80 hover:scale-105 transition-all duration-300 border border-accent/50 hover:border-accent uppercase tracking-widest text-sm">Contact Us</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -109,9 +109,9 @@ export default function Navbar() {
 
         {/* Contact Button */}
         <div className="absolute bottom-6 left-6 right-6">
-          <Button className="w-full bg-[#b5d520]  font-bold px-6 py-4 rounded-xl   transition-all duration-300 border border-accent/50  uppercase tracking-wider text-base cursor-pointer hover:bg-[#b5d520]/90 hover:shadow-lg hover:shadow-[#b5d520]/50">
+          <Link href='/contact' onClick={closeMenu} className="w-full bg-[#b5d520]  font-bold px-6 py-4 rounded-md transition-all duration-300 border border-accent/50  uppercase tracking-wider text-base cursor-pointer hover:bg-[#b5d520]/90 hover:shadow-lg hover:shadow-[#b5d520]/50">
             Contact Us
-          </Button>
+          </Link>
         </div>
       </div>
     </header>
